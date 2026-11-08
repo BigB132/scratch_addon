@@ -7,16 +7,22 @@
     "content_scripts": [
         {
             "matches": ["https://scratch.mit.edu/"],
-            "css": ["style.css"],
-            "js": ["script.js"],
+            "css": ["dashboard/style.css"],
+            "js": ["dashboard/script.js"],
+            "run_at": "document_start"
+        },
+        {
+            "matches": ["https://scratch.mit.edu/users/*"],
+            "css": ["profile/style.css"],
+            "js": ["profile/script.js"],
             "run_at": "document_start"
         }
     ],
 
     "web_accessible_resources": [
         {
-        "resources": ["assets/heart.png", "assets/star.png", "assets/person.png", "assets/eye.png"],
-        "matches": ["https://scratch.mit.edu/*"]
+            "resources": ["assets/*"],
+            "matches": ["https://scratch.mit.edu/*"]
         }
     ]
 

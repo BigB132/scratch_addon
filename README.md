@@ -1,42 +1,21 @@
-This addon will feature multiple features.
-For the first few days I want to focus on redesigning the website from ground up.
+A scratch redesign extension.
 
-# Start page/dashboard
+This is a chrome extension, that enhances the way [scratch](scratch.mit.edu) looks.
 
-[DONE] Upper Box:
-Left:
-Tab 1:
-    new loves, total loves
-    facvorites
-    followers 
-    views
+This project is unfinished and only works if you are logged into scratch.
 
-Right:
-Tab 1: 
-    whats happening
-Tab 2: 
-    scratch news 
+# How to use:
 
-[DONE] Blue box:
-Tab 1: Featured projects done
-Tab 2: Features studios done
+1. Download a zip of this project and unzip.
+2. Open Chrome and type 'chrome://extensions' into the address bar.
+3. Enable developer options in the top right corner.
+4. Click load unpacked and select the folder you just unzipped.
+5. Go on [scratch.mit.edu](scratch.mit.edu) and enjoy
 
-Red box:
-Tab 1: Projects loved by scratchers im following
-Tab 2: Projects made by scratchers im following
+# Screenshots:
 
-Green box:
-Scratch design studio.
+![Dashboard](./screenshots/image1.png)
+The fully finished dashboard. It comes with project stats and shows all featured projects in a nice way.
 
-# API
-
-featured projects/studios + design studio: https://api.scratch.mit.edu/proxy/featured
-
-whats happening (aka messages of who published what): https://api.scratch.mit.edu/users/BF-Scratching/following/users/activity?limit=5
-scratch news: https://api.scratch.mit.edu/news?limit=3
-
-how to get the toal likes?
-projects loves by scratchers I'am following: https://api.scratch.mit.edu/users/BF-Scratching/following/users/loves
-
-IDEA DUMP:
-hover over a project name to see a thumbnail preview
+![Profile Page](./screenshots//image2.png)
+The unfinished profile page. It has a cool looking profile overview.

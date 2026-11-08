@@ -466,7 +466,7 @@ async function tryInjectingBoxes() {
                 card.className = "list-card"
                 
                 const a = document.createElement('a');
-                a.href = "/studios/" + project.id
+                a.href = "/projects/" + project.id
                 const img = document.createElement('img')
                 img.src = project.thumbnail_url;
                 img.className = "project-thumb"
@@ -475,7 +475,7 @@ async function tryInjectingBoxes() {
 
                 const textDiv = document.createElement('div');
                 const title = document.createElement('a');
-                title.href = "/studios/" + project.id;
+                title.href = "/projects/" + project.id;
                 title.textContent = project.title;
                 title.className = "project-title";
                 const authorSection = document.createElement('div');
