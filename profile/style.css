@@ -20,6 +20,7 @@
     width: 1200px !important;
     background-color: #010102;
     box-shadow: 0 0 0 1000px #010102 !important;
+    padding-bottom: 16px !important;
 }
 
 .top-box {
@@ -130,6 +131,8 @@
     background-color: #0D1933 !important;
     border-top-left-radius: 16px !important;
     border-top-right-radius: 16px !important;
+    border-bottom-left-radius: 16px !important;
+    border-bottom-right-radius: 16px !important;
 }
 
 p {
@@ -208,4 +211,29 @@ body {
 
 p.overview {
     color: white !important;
+}
+
+.footer {
+    background-color: #4081FF;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-buttons {
+    margin: 0px !important;
+
+}
+
+.footer-text {
+    color: white;
+}
+
+.footer-btn {
+    display: inline-block !important;
+    height: 100%;
+    align-self: flex-start;
+    padding: 5px 15px 4px 15px;
+    margin: 0px;
 }

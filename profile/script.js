@@ -95,6 +95,77 @@ function injectStuff() {
         return div;
     }
 
+    function generateNewFooter() {
+        const footer = document.createElement('div');
+        footer.className = "footer";
+        
+        const logo = document.createElement('img')
+        logo.className = "logo"
+        logo.src = "/images/logo_sm.png";
+
+        const buttons = document.createElement('ul');
+        buttons.className = "footer-buttons"
+        const aboutLink = document.createElement('a');
+        aboutLink.href = "/about";
+        const aboutBtn = document.createElement('li');
+        aboutBtn.className = "footer-btn";
+        aboutBtn.appendChild(aboutLink);
+        const aboutText = document.createElement('span');
+        aboutText.textContent = "About";
+        aboutText.className = "footer-text"
+        aboutLink.appendChild(aboutText)
+
+        const communityLink = document.createElement('a');
+        communityLink.href = "/discuss"
+        const communityBtn = document.createElement('li');
+        communityBtn.className = "footer-btn";
+        communityBtn.appendChild(communityLink)
+        const communityText = document.createElement('span');
+        communityText.textContent = "Community";
+        communityText.className = "footer-text"
+        communityLink.appendChild(communityText);
+
+        const resourceLink = document.createElement('a');
+        resourceLink.href = "/starter-projects"
+        const resourceBtn = document.createElement('li');
+        resourceBtn.className = "footer-btn";
+        resourceBtn.appendChild(resourceLink)
+        const resourceText = document.createElement('span');
+        resourceText.textContent = "Resources";
+        resourceText.className = "footer-text"
+        resourceLink.appendChild(resourceText)
+
+
+        const legalLink = document.createElement('a');
+        legalLink.href = "https://mitscratch.freshdesk.com/en/support/solutions/articles/4000219182-scratch-terms-of-service"
+        const legalBtn = document.createElement('li');
+        legalBtn.className = "footer-btn";
+        legalBtn.appendChild(legalLink)
+        const legalText = document.createElement('span');
+        legalText.textContent = "Legal";
+        legalText.className = "footer-text"
+        legalLink.appendChild(legalText)
+
+
+        const familyLink = document.createElement('a');
+        familyLink.href = "https://en.scratch-wiki.info/wiki/Scratch_Family#Scratch_Day"
+        const familyBtn = document.createElement('li');
+        familyBtn.className = "footer-btn";
+        familyBtn.appendChild(familyLink)
+        const familyText = document.createElement('span');
+        familyText.textContent = "Scratch Family";
+        familyText.className = "footer-text"
+        familyLink.appendChild(familyText)
+
+
+        buttons.append(aboutBtn, communityBtn, resourceBtn, legalBtn, familyBtn)
+
+        footer.appendChild(logo);
+        footer.appendChild(buttons);
+
+        return footer;
+    }
+
     const username = document.querySelector("#profile-data > div.box-head > div.header-text > h2")?.textContent.trim();
     const body = document.querySelector("#content");
     const existingpfp = document.querySelector("#profile-avatar > div > a > img");
@@ -191,7 +262,7 @@ function injectStuff() {
         boxes.appendChild(whatImWorkingOn);
     }
 
-    const whatIveBeenDoing = generateWhatIveBeenDoing().then((result) => {
+    generateWhatIveBeenDoing().then((result) => {
         boxes.appendChild(result)
     })
 
@@ -199,6 +270,9 @@ function injectStuff() {
     topboxAndBoxesTogether.append(topBoxFinal, boxes);
 
     document.getElementById('profile-data').replaceWith(topboxAndBoxesTogether)
+
+    const footer = generateNewFooter();
+    document.getElementById('footer').replaceWith(footer)
 
     return true;
 }
