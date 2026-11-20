@@ -1,18 +1,14 @@
-A scratch redesign extension.
+# A scratch redesign extension.
 
 This is a chrome extension, that enhances the way [scratch](scratch.mit.edu) looks.
 
 This project is unfinished and only works if you are logged into scratch.
 
-The extension works only on google chrome and microsoft edge. It does not work on firefox.
+The extension only works on google chrome and microsoft edge. It does not work on firefox.
 
 # How to use:
 
-1. Download a zip of this project and unzip.
-2. Open Chrome and type 'chrome://extensions' into the address bar.
-3. Enable developer options in the top right corner.
-4. Click load unpacked and select the folder you just unzipped.
-5. Go on [scratch.mit.edu](scratch.mit.edu) and enjoy
+Simply just install it from here: https://chromewebstore.google.com/detail/scratch-addon/cigdgjhpolbhhllofloabfcogmnbkpha
 
 # Screenshots:
 
